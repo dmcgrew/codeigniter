@@ -8,8 +8,10 @@
 	
 	
 	
-	<?php foreach($records as $row): ?>
-    	<h1><?php echo $row->title; ?></h1>
+	<?php foreach($rows as $r): ?>
+	<h1><?php echo $r->title; ?></h1>
+	<small><?php echo $r->author; ?></small>
+	<div><?php echo $r->contents; ?></div>
 	<?php endforeach; ?>
 	</body>
 </html>
